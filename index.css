@@ -191,26 +191,26 @@ input:focus{
 }
 
 .messages{
-  height: 80vh;
+  height: 70vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
 @media(max-width: 2000px){
 .messages{
-  height: 79vh;
+  height: 69vh;
 } 
 }
 
 @media(max-width: 1600px){
 .messages{
-  height: 75vh;
+  height: 65vh;
 } 
 }
 
 @media(max-width: 1500px){
 .messages{
-  height: 74vh;
+  height: 64vh;
   font-size: 0.9rem;
 } 
 }
@@ -264,3 +264,16 @@ input:focus{
   height: fit-content;
 }
 /* Room Page End */
+.emoji{
+  white-space:nowrap;
+  list-style-type: none;
+  overflow-x:hidden;
+  width: 100%;
+  padding:0;
+  font-size: 1.5rem !important;
+  margin:0 0 0.25rem 0 !important;
+}
+.emoji  li
+{ 
+  display:inline; 
+}    

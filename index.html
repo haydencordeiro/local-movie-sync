@@ -205,6 +205,19 @@
                             <div class="col-12">
                                 <div class="row justify-content-center chattimg">
                                   <form action="#" id="send-form">
+                                    <ul class="emoji">
+                                      <li>
+                                        <span onclick="return addEmoji('&#128514;')">&#128514;</span>
+                                        <span onclick="return addEmoji('&#128527;')">&#128527;</span>
+                                        <span onclick="return addEmoji('&#128557;')">&#128557;</span>
+                                        <span onclick="return addEmoji('&#128541;')">&#128541;</span>
+                                        <span onclick="return addEmoji('&#128561;')">&#128561;</span>
+                                        <span onclick="return addEmoji('&#128565;')">&#128565;</span>
+                                        <span onclick="return addEmoji('&#128566;')">&#128566;</span>
+                                        <span onclick="return addEmoji('&#129314;')">&#129314;</span>
+                                        <span onclick="return addEmoji('&#128561;')">&#128561;</span>
+                                      </li>
+                                    </ul>
                                     <div class="col-12">
                                       <input 
                                         autocomplete="off"
@@ -228,5 +241,11 @@
     <script src="https://local-party.herokuapp.com/socket.io/socket.io.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script>
+      function addEmoji(e){
+        document.getElementById('messageInp').value += e;
+        return false;
+      }
+    </script>
   </body>
 </html>
