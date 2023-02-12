@@ -350,7 +350,8 @@ function onChangeFile() {
 	const file = document.getElementById("file-id").files[0]
     const path = (window.URL || window.webkitURL).createObjectURL(file)
     const size = file.size
-    localStorage.setItem("videoSize", size)
+    // localStorage.setItem("videoSize", size)
+    localStorage.setItem("videoSize", 100)
     localStorage.setItem("videoPath", path)
 }
 
@@ -358,6 +359,7 @@ function onChangeJoinFile() {
     const file = document.getElementById("join-file-id").files[0]
     const path = (window.URL || window.webkitURL).createObjectURL(file)
     const size = file.size
-    localStorage.setItem("videoSize", size)
+    // localStorage.setItem("videoSize", size)
+    localStorage.setItem("videoSize", 100)
     localStorage.setItem("videoPath", path)
 }
